@@ -1,6 +1,6 @@
 #!/bin/bash
 
-base_path="/tmp"
+base_path="/home/ff_build"
 sources_path="$base_path/sources"
 
 patch_dir="$(pwd)/patches"
@@ -14,7 +14,7 @@ mkdir -p $sources_path
 cd $sources_path
 
 echo -e "\e[1;44m ----x264-----  \e[0m"
-X264_git="https://code.videolan.org/videolan/x264.git"
+X264_git="https://github.com/mirror/x264.git"
 X264_ver="stable"
 git clone --depth 1 $X264_git -b $X264_ver x264
 
